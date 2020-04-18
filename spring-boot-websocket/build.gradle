@@ -1,0 +1,17 @@
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter-data-rest"
+    implementation "org.springframework.boot:spring-boot-starter-thymeleaf"
+    implementation "org.springframework.boot:spring-boot-starter-websocket"
+
+    implementation 'org.webjars.npm:bootstrap:4.4.1'
+    implementation 'org.webjars.npm:jquery:3.5.0'
+    implementation 'org.webjars.npm:sockjs-client:1.4.0'
+    implementation 'org.webjars:stomp-websocket:2.3.3'
+}
+
+jar {
+    manifest {
+        attributes("Main-Class": "com.cacoota.business.SpringBootExampleWebSocketApplication")
+        attributes("Class-Path": configurations.compile.collect { "lib/$it.name" }.join(' '))
+    }
+}

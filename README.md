@@ -5,7 +5,7 @@ springboot模块示例代码与研究
 #### 主要内容
 ##### 分模块展示示例代码
 
-- [参考文档](https://guides.gradle.org/creating-multi-project-build
+- [参考文档]https://guides.gradle.org/creating-multi-project-build
 
 > 基础定时任务框架
 
