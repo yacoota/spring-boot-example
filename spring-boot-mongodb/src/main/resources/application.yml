@@ -1,0 +1,16 @@
+server:
+  port: 15556
+
+spring:
+  thymeleaf:
+    enabled: true
+    cache: false
+    suffix: .html
+    encoding: UTF-8
+  data:
+    mongodb:
+      host: ENC(QeurvDfxZk+DDGvcyJcOiFJQxoA0/2wEySx2bmEDqZmIlro1vy+ZKVBDYl3W4DzW)
+      port: 15011
+      database: ENC(BohM9X1wE8gB/UiiPD/7A4fXT9aLSSW9LQHFFBeB0rRoUDVqQckN6mimuIFXHftl)
+      username: ENC(KfmCFcTQzSTl+xivLHfc7CnyCjEmHvGIPDKaTWR9zd2gmXGqkLf66etgcifymPao)
+      password: ENC(cvSvgZMPOx5UnSuzV+xYML32K1D4qJLbGBNS02KEpbkhS/nytC1pNeAj4wSRiaFO)

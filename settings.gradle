@@ -1,4 +1,5 @@
 rootProject.name = 'spring-boot-example'
 include 'spring-boot-task'
 include 'spring-boot-websocket'
+include 'spring-boot-mongodb'
 

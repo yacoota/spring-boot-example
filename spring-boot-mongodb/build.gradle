@@ -1,0 +1,12 @@
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter-data-rest"
+    implementation "org.springframework.boot:spring-boot-starter-thymeleaf"
+    implementation "org.springframework.boot:spring-boot-starter-data-mongodb-reactive"
+}
+
+jar {
+    manifest {
+        attributes("Main-Class": "com.cacoota.business.SpringBootExampleMongoApplication")
+        attributes("Class-Path": configurations.compile.collect { "lib/$it.name" }.join(' '))
+    }
+}
