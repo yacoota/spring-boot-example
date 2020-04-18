@@ -1,0 +1,67 @@
+//plugins {
+//    id 'java'
+//    id 'org.springframework.boot' version '2.2.6.RELEASE'
+//    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+//}
+
+group 'com.cacoota.boot.example'
+version '1.0.0.0'
+
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'maven'
+
+    sourceCompatibility = targetJavaVersion
+    targetCompatibility = targetJavaVersion
+
+    [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+
+    configurations {
+        all*.exclude group: 'commons-logging'
+        developmentOnly
+        runtimeClasspath {
+            extendsFrom developmentOnly
+        }
+        compileOnly {
+            extendsFrom annotationProcessor
+        }
+    }
+
+    dependencies {
+        implementation platform('org.springframework.boot:spring-boot-dependencies:2.2.6.RELEASE')
+
+        implementation "org.springframework.boot:spring-boot-starter"
+        runtimeOnly "org.springframework:spring-context-indexer"
+        compileOnly "org.projectlombok:lombok:1.18.12"
+    }
+
+    sourceSets {
+        main {
+            java {
+                srcDir 'src/main/java'
+            }
+            resources {
+                srcDir 'src/main/resources'
+            }
+        }
+    }
+
+    jar {
+        manifest {
+            attributes("provider": "Gradle")
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    defaultTasks 'clean', 'build', 'assemble'
+}
+
+
+
+
