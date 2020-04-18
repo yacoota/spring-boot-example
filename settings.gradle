@@ -7,4 +7,5 @@ include 'spring-boot-redis'
 include 'spring-boot-mysql'
 include 'spring-boot-thymeleaf'
 include 'spring-boot-rest'
+include 'spring-boot-freemarker'
 

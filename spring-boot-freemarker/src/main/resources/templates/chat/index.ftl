@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
     <title>聊天框</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.4.1/dist/css/bootstrap.css}"/>
-    <script th:src="@{/webjars/jquery/3.5.0/dist/jquery.js}"></script>
-    <script th:src="@{/webjars/bootstrap/4.4.1/dist/js/bootstrap.js}"></script>
-    <script th:src="@{/webjars/sockjs-client/1.4.0/dist/sockjs.js}"></script>
-    <script th:src="@{/webjars/stomp-websocket/2.3.3/stomp.js}"></script>
+    <link rel="stylesheet" href="${rc.contextPath}/webjars/bootstrap/4.4.1/dist/css/bootstrap.css"/>
+    <script src="${rc.contextPath}/webjars/jquery/3.5.0/dist/jquery.js"></script>
+    <script src="${rc.contextPath}/webjars/bootstrap/4.4.1/dist/js/bootstrap.js"></script>
+    <script src="${rc.contextPath}/webjars/sockjs-client/1.4.0/dist/sockjs.js"></script>
+    <script src="${rc.contextPath}/webjars/stomp-websocket/2.3.3/stomp.js"></script>
     <style>
         * {
             margin: 2px;
