@@ -23,7 +23,7 @@
 		<prudent>true</prudent>
 		<!-- 按天新建log日志 -->
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>${USER_HOME}/spring-boot-example-search-%d{yyyyMMdd}-%i.log</fileNamePattern>
+            <fileNamePattern>${USER_HOME}/spring-boot-example-redis-%d{yyyyMMdd}-%i.log</fileNamePattern>
             <!-- 每个文件保留30天，单文件最大500MB，日志文件最大占用20G空间-->
             <maxHistory>30</maxHistory>
             <maxFileSize>500MB</maxFileSize>

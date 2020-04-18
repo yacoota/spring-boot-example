@@ -1,0 +1,15 @@
+server:
+  port: 15556
+
+spring:
+  redis:
+    cluster:
+      nodes: ENC(REoXMUyqFjtzfGQjNKjqSpaXKBA+vw3k23cBJ8PWvj9ebQU7qj9uCgGtDio/zGBk16Zl3AohJihPXzOJB3SG+lCvrmYsHRe6ujk4m+tkxhQ=)
+    password: ENC(Oi/qCoDxPZ9onIt/+pSCDQcYpbEqu4dApxdp/hhDvzKPFMyrB0NlxLZzu0QPnHt7)
+    timeout: 30000
+    lettuce:
+      pool:
+        max-active: 200
+        max-idle: 20
+        min-idle: 5
+        max-wait: 5000
