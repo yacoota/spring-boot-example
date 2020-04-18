@@ -7,9 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @Slf4j
 @SpringBootApplication
-public class SpringBootExampleMongoApplication {
+public class SpringBootExampleSearchApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootExampleMongoApplication.class, args);
+        SpringApplication.run(SpringBootExampleSearchApplication.class, args);
         log.info("-------------------------------------- 应用程序启动完成 --------------------------------------");
     }
 }

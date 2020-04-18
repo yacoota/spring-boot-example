@@ -1,0 +1,12 @@
+server:
+  port: 15556
+
+spring:
+  data:
+    elasticsearch:
+      cluster-name: ENC(N0cEYtZuXJtRUVFXhYT2mfkG6B195PtA19YtS5lBRCCngEgDeh74WGQ6KFNutlUS)
+      cluster-nodes: ENC(U4tZWZTgljEgmMhD78dcezXVcIezpF8zNLq8Olv2e6fT/r23MPup4acmUUgl9JZEru+/kGDrEHfYX2wglF+e6/CnP8NRbAE3ePuV62C/PdU=)
+      properties:
+        transport:
+          tcp:
+            connect_timeout: 120s

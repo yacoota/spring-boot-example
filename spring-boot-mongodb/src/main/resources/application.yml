@@ -2,11 +2,6 @@ server:
   port: 15556
 
 spring:
-  thymeleaf:
-    enabled: true
-    cache: false
-    suffix: .html
-    encoding: UTF-8
   data:
     mongodb:
       host: ENC(QeurvDfxZk+DDGvcyJcOiFJQxoA0/2wEySx2bmEDqZmIlro1vy+ZKVBDYl3W4DzW)
