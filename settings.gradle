@@ -4,4 +4,5 @@ include 'spring-boot-websocket'
 include 'spring-boot-mongodb'
 include 'spring-boot-elasticsearch'
 include 'spring-boot-redis'
+include 'spring-boot-mysql'
 
