@@ -4,7 +4,6 @@ package com.cacoota.business.service.impl;
 import com.cacoota.business.service.RedisDemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.ReactiveRedisTemplate;
-import org.springframework.data.redis.core.ReactiveStringRedisTemplate;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -13,12 +12,8 @@ import reactor.core.publisher.Mono;
 @Service
 public class RedisDemoServiceImpl implements RedisDemoService {
 
-    // @Autowired
-    private ReactiveRedisTemplate<String, String> otemplate;
-
     @Autowired
-    private ReactiveStringRedisTemplate template;
-
+    private ReactiveRedisTemplate<String, String> template;
 
     @Override
     public Mono save(String key, String value) {
@@ -37,8 +32,8 @@ public class RedisDemoServiceImpl implements RedisDemoService {
 
 
     @Override
-    public Mono publishTo(String key, Object value) {
-        return template.convertAndSend(key, (String)value);
+    public Mono publishTo(String key, String value) {
+        return template.convertAndSend(key, value);
     }
 
     @Override

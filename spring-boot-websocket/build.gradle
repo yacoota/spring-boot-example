@@ -1,7 +1,11 @@
+ext{
+    findbugs_version = "3.0.1"
+}
 dependencies {
     implementation "org.springframework.boot:spring-boot-starter-data-rest"
     implementation "org.springframework.boot:spring-boot-starter-thymeleaf"
     implementation "org.springframework.boot:spring-boot-starter-websocket"
+    implementation "com.google.code.findbugs:annotations:${findbugs_version}"
 
     implementation 'org.webjars.npm:bootstrap:4.4.1'
     implementation 'org.webjars.npm:jquery:3.5.0'

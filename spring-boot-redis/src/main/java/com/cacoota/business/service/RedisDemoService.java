@@ -11,7 +11,7 @@ public interface RedisDemoService {
 
     Flux show(String[] data);
 
-    Mono publishTo(String key, Object value);
+    Mono publishTo(String key, String value);
 
     Flux subscribeOn(String... channels);
     

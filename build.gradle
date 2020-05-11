@@ -31,7 +31,6 @@ subprojects {
     ext {
         jasypt_version = "3.0.2"
         fastjson_version = "1.2.68"
-        findbugs_version = "3.0.1"
         fastjson_kotlin_version = "2.10.3"
     }
 
@@ -46,6 +45,7 @@ subprojects {
 
         runtimeOnly "org.springframework:spring-context-indexer"
         compileOnly "org.projectlombok:lombok:1.18.12"
+        annotationProcessor "org.projectlombok:lombok:1.18.12"
     }
 
     sourceSets {
